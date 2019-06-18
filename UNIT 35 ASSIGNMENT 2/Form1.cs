@@ -19,6 +19,7 @@ namespace UNIT_35_ASSIGNMENT_2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //calculate the series resistance of five different numbers
             double R1, R2, R3, R4, R5, Resistance;
 
             try
@@ -69,6 +70,7 @@ namespace UNIT_35_ASSIGNMENT_2
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //this  is to calculate parallel resitance of four different numbers
             double R1, R2, R3, R4, Resistance;
             try
             {
@@ -101,11 +103,11 @@ namespace UNIT_35_ASSIGNMENT_2
             catch
             {
                 R4 = double.PositiveInfinity;
-
-                Resistance = 1 / (1 / R1 + 1 / R2 + 1 / R3 + 1 / R4);
-                label2.Text = "Resistance =" + Resistance;
-
             }
+            Resistance = 1 / (1 / R1 + 1 / R2 + 1 / R3 + 1 / R4);
+            label2.Text = "Resistance =" + Resistance;
+
+            
         }
     }
 }
